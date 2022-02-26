@@ -1,0 +1,443 @@
+/* Rest css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1.Từ ngoài vào trong
+2.từ trên xuống dưới
+3.Từ tổng quan đến chi tiết 
+ */
+/* 
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4,kiểu dáng(kiểu chữ, hình vuông, tròn...)
+ */
+ /* Command */
+ .clear{
+     clear: both;
+ }
+ .text-white{
+     color: #fff !important ;
+ }
+ .row::after{
+     content: "";
+     display: block;
+     clear: both;
+ }
+ .row{
+     margin-left: -8px;
+     margin-right: -8px;
+ }
+ .col{
+     padding-left: 8px;
+     padding-right: 8px;
+     float: left;
+ }
+ .col-third{
+     width: calc(100%/3);
+ }
+ .col-half{
+     width: calc(100%/2);
+ }
+ .col-full{
+     width: 100%;
+ }
+ .mt-8{
+     margin-top: 8px;
+ }
+ .mt-16{
+    margin-top: 16px;
+}
+ /* Main */
+ #main{
+ }
+#header{
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+#nav{
+    display: inline-block;
+}
+#nav > li{
+    display: inline-block;
+
+}
+#nav > li > a{
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+#nav li a {
+   
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46.5px;
+
+
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+#nav li:hover .subnav{
+    display: block;
+   
+}
+#nav > li:hover > a,
+.subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+    display: block;
+   
+
+}
+.subnav li a{
+    color: black;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav .icon-1{
+    font-size: 14px;
+    
+}
+#header .sreach-buton{
+  float: right; 
+  padding: 0 21px;
+}
+#header .sreach-buton:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .icon-2{
+    color: white;
+    font-size: 20px;
+    line-height: 46.5px;
+   
+}
+#slide{
+ padding-top: 50%;
+ margin-top: 46.5px;
+ background: url('/assets/img/img-slide/newyork.jpg') top center / cover no-repeat;
+ position: relative;
+}
+#slide .text-conten{
+    position: absolute;
+    bottom: 46px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+#slide .text-heading{
+ font-weight: 500;
+ font-size: 24px;
+ margin-bottom: 25px;
+}
+#slide .text-description{
+    font-size: 15px;
+}
+#content{}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+}
+#content .section-subheading{
+  margin-bottom: 15px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-style: italic;
+
+}
+
+#content .section-heading,
+#content .section-subheading{
+     text-align: center;
+}
+#content .about-p{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    
+}
+#content .member-list{
+    padding: 32px 0;
+}
+#content .member-item{
+    text-align: center;
+}
+#content .member-name{
+    margin-bottom: 15px;
+}
+#content .member-img{
+    width: 152px;
+    border-radius: 4px;
+}
+/* Tour-section */
+.tour-section{
+    background-color: #000;
+}
+.tour-section .ticket-list{
+    background-color: #fff;
+    font-size: 15px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+.ticket-list li{
+    border-bottom: 1px solid #ddd;
+    padding: 11px 16px;
+    color: #757575;
+}
+.ticket-list .tour-sold{
+    margin-left: 16px;
+    background-color: #F44336;
+    color: #fff;
+    padding: 4px 8px;
+
+}
+.ticket-list .quanati{
+    float: right;
+    width: 24px;
+    height: 22px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -2px;
+    margin-right: 16px;
+    line-height: 24px;
+}
+/* Places */
+.places-list{
+   margin-top:  32px ;
+}
+.places-item{
+   padding-bottom: 32px;
+}
+.places-img{
+    width: 100%;
+    display: block;
+}
+.places-img:hover {
+  opacity: 0.6;
+}
+.places-content{
+    background-color: #fff;
+    padding: 15px 16px;
+    font-size: 15px;
+
+}
+.places-name{
+    font-weight: 550;
+
+}
+.places-time{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #757575;
+
+}
+.places-p{
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.places-btn{
+ display: inline-block;
+ color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    border: none
+}
+.places-btn:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+/* Contact */
+.contact-inf{
+    margin-top: 47px;
+}
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-infor i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.input-btn-from.mt-16 {
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 12px 17px;
+    float: right;
+}
+.input-btn-from.mt-16:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+/* Map-section */
+.map-section{
+    width: 100%;
+}
+
+/* footer */
+#footer{
+   text-align: center;
+   padding: 64px 16px;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a,
+#footer .socials-list a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#footer .copy-right {
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadein ease 0.4s;
+}
+
+.modal-header {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    background-color: #009688;
+    color: #fff;
+    padding: 45px;
+    letter-spacing: 5px;
+}
+
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    color: #fff;
+    padding: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 21px;
+    border: 1px solid #ccc;
+}
+
+
+.modal-buy {
+    border: none;
+    width: 100%;
+    background-color: #009688;
+    font-size: 15px;
+    color: #fff;
+    padding: 19px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.modal-buy:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.modal-footer {
+    padding: 13px;
+    text-align: right;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadein{
+    from{
+        transform: translateY(-140px);
+    }
+     to {
+       transform: translateY(0);
+    }
+ 
+}
