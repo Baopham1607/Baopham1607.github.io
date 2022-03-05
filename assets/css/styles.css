@@ -66,7 +66,36 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+}
+#header .menu-mobile-btn,
+#header .sreach-buton{
+  float: right; 
+  padding: 0 21px;
+}
 
+#header .menu-mobile-btn{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .sreach-buton:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .menu-mobile-btn:hover{
+    background-color: #ccc;
+}
+
+#header .menu-mobile-btn:hover i{
+    color: #000;
+}
+#header .the-menu,
+#header .icon-2{
+    color: white;
+    font-size: 20px;
+    line-height: 46.5px;
+   
 }
 #nav{
     display: inline-block;
@@ -117,20 +146,6 @@ html{
     font-size: 14px;
     
 }
-#header .sreach-buton{
-  float: right; 
-  padding: 0 21px;
-}
-#header .sreach-buton:hover{
-    background-color: #f44336;
-    cursor: pointer;
-}
-#header .icon-2{
-    color: white;
-    font-size: 20px;
-    line-height: 46.5px;
-   
-}
 #slide{
  padding-top: 50%;
  margin-top: 46.5px;
@@ -151,13 +166,18 @@ html{
 }
 #slide .text-description{
     font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 #content{}
+
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -285,6 +305,14 @@ html{
     font-size: 18px;
     line-height: 1.5;
 }
+.contact-infor a{
+    color: #004ff2;
+    opacity: 0.8;
+}
+.contact-infor a:hover{
+    opacity: 1.2;
+
+}
 .contact-infor i[class*="ti-"]{
     width: 30px;
     display: inline-block;
@@ -339,7 +367,9 @@ html{
 #footer .copy-right a{
     color: rgba(0, 0, 0, 0.6);
 }
-
+#The-map{
+    width: 100%;
+}
 /* modal */
 .modal{
     position: fixed;
